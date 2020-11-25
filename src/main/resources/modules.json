@@ -1,0 +1,35 @@
+{
+  "overworld": {
+    "description": "A module that enables mobs from the overworld",
+    "cost": 0,
+    "upkeepCost": 0,
+    "incompatibleWith": [
+      "nether",
+      "end"
+    ]
+  },
+  "nether": {
+    "description": "A module that enables mobs from the nether",
+    "cost": 900,
+    "upkeepCost": 50,
+    "incompatibleWith": [
+      "overworld",
+      "end"
+    ]
+  },
+  "end": {
+    "description": "A module that enables mobs from the end",
+    "cost": 1800,
+    "upkeepCost": 100,
+    "incompatibleWith": [
+      "nether",
+      "overworld"
+    ]
+  },
+  "passive": {
+    "description": [
+      "A module that enables passive mobs.",
+      "&cAlso disables hostile mobs."
+    ]
+  }
+}

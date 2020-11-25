@@ -1,0 +1,57 @@
+overworld:
+  description: A module that enables mobs from the overworld
+  cost: 0
+  upkeepCost: 0
+  incompatibleWith:
+    - nether
+    - end
+nether:
+  description: A module that enables mobs from the nether
+  cost: 900
+  upkeepCost: 50
+  incompatibleWith:
+    - overworld
+    - end
+end:
+  description: A module that enables mobs from the end
+  cost: 1800
+  upkeepCost: 100
+  incompatibleWith:
+    - nether
+    - overworld
+passive:
+  description:
+    - A module that enables passive mobs.
+    - '&cAlso disables hostile mobs.'
+  cost: 100
+  upkeep: 0
+  require:
+    - overworld
+water:
+  description:
+    - A module that enables mobs that spawn in water
+    - '&cAlso disables other mobs.'
+  cost: 100
+  upkeep: 0
+  require:
+    - overworld
+boss:
+  description:
+    - A module that enables boss mobs.
+    - '&cDisables all other types of mobs.'
+    - '&There are large costs associated with this.'
+  cost: 14400
+  upkeep: 900
+player:
+  description: Adds player drops
+  cost: 100
+  upkeep: 10
+xp:
+  description: Boosts xp gain at a cost of no item drops
+  cost: 100
+  upkeep: 10
+cow:
+  cost: 100
+  upkeep: 50
+  drops:
+
